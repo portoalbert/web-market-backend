@@ -32,7 +32,7 @@ db.once("Open", () => {
   console.log("Connected to DB");
 });
 
-app.get("/", (req, res) => {
+app.get("/foo", (req, res) => {
   console.log("Ping");
   itemModel.find({}, (error, data) => {
     if (error) {
@@ -53,7 +53,7 @@ app.get("/:id", (req, res) => {
     }
   });
 });
-app.get("/carousel", (req, res) => {
+app.get("/", (req, res) => {
   console.log("Carousel Being fetched");
   carouselModel.find({}, (error, data) => {
     if (error) {
