@@ -1,12 +1,13 @@
-const express = require("express");
-const app = express();
 const mongoose = require("mongoose");
 const userModel = require("./model/model.js");
 const bodyParser = require("body-parser");
 const itemModel = require("./model/newitem.js");
+const carouselModel = require("./model/carousel.js");
 const { response } = require("express");
 const cors = require("cors");
-const carouselModel = require("./model/carousel.js");
+const express = require("express");
+
+const app = express();
 
 const username = "albert";
 const password = "albert123";
